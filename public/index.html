@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гаусівський розподіл та синхронізація часу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        h2, h3 {
+            color: #004080;
+        }
+        p {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h2>Синхронізація часу</h2>
+    <button onclick="syncTime()">Синхронізувати час</button>
+    <p id="timeOutput">Натисніть кнопку для синхронізації.</p>
+    <p id="syncError"></p>
+
+    <h3>Статистика</h3>
+    <p id="output"></p>
+
+    <script src="/timesync/timesync.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
